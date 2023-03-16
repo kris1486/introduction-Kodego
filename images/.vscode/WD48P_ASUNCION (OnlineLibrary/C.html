@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{
+    margin:0;
+    padding: 0;
+}
+
+#home-page-box{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    grid-template-areas: 'header-about-box''header-about-box''header-about-box''header-about-box'
+    'content-box''content-box''content-box''content-box';
+}
+
+
+#wish{
+    width: 15px;
+    height: 15px;
+}
+   
+   
+</style>
+</head>
+<!--home-page-->
+<body>
+    <div id="home-page-box">
+        /*header first line*/
+        <div class="header-about-box">
+            <ul class="nav-about">
+                <li>About Us</li>
+                <li>FAQ</li>
+                <li>Events</li>
+                <li>Contact Us</li>
+                <li>| Log in</li>
+                <li>Register</li>
+                <li>
+                    <img id="wish" src="https://tse4.mm.bing.net/th?id=OIP.66ij4nWzLIWFKm2DOVkslQHaG3&pid=Api&P=0">
+                    <a>Wishlist</a>
+                </li>
+            </ul>
+        </div>
+        /*header middle line*/
+        <div class="header-online-library">
+            <div class="online">
+                <h1>ONLINE LIBRARY</h1>
+                <ul>
+                    <a>SEARCH AREA</a>
+                    <img class="cart" scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk4ACV7eq4AJVjfRJMtfo_ispz2qjxJE9bQ&usqp=CAU">
+                </ul>
+            </div>
+        </div>
+        /*header last line>
+        <div class="header-options">
+            <ul class="nav-options">
+                <li>HOME</li>
+                <li>BESTSELLERS</li>
+                <li>NEW RELEASES</li>
+                <li>GENRE</li>
+                <li>DEALS</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content-box">
+        <div class="left-side-box">
+            <div class="filter">
+                <ul>
+                    <li>Category</li>
+                    <li>PRICE</li>
+                    <li>GENRE
+                        <ul>
+                            <li>Fantasy</li>
+                            <li>Romance</li>
+                            <li>Adventure</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side-box">
+            <h1>Recommended</h1>
+            <div class="books">
+                <div class="book-cover">
+                    <div class="book_1">
+                        <img src="imagesOL/image1.jpg">
+                        <div class="details">
+                            <a>TO KILL A MOCKING BIRD</a>
+                            <ul>
+                                <li>Harper Lee</li>
+                                <li>1960</li>
+                                <li>Add to wishlist</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" href="#billing-form-box">ADD TO CART</button>
+                    </div>
+                    <div class="book_2">
+                        <img src="imagesOL/image2.jpg">
+                        <div class="details">
+                            <a>THE GREAT GATSBY</a>
+                            <ul>
+                                <li>F. Scott Fitzgerald</li>
+                                <li>1925</li>
+                                <li>Add to wishlist</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" href="#billing-form-box">ADD TO CART</button>
+                    </div>
+                    <div class="book_3">
+                        <img src="imagesOL/image3.jpg">
+                        <div class="details">
+                            <a>"1984"</a>
+                            <ul>
+                                <li>George Orwell</li>
+                                <li>1949</li>
+                                <li>Add to wishlist</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" href="#billing-form-box">ADD TO CART</button>
+                    </div>
+
+                    <div class="book_4">
+                        <img src="imagesOL/image4.jpg">
+                        <div class="details">
+                            <a>ADVENTURES OF HUCKLEBERRY FINN</a>
+                            <ul>
+                                <li>Mark Twain</li>
+                                <li>1884</li>
+                                <li>Add to wishlist</li>
+                            </ul>
+                        </div>
+                        <button class="add-to-cart" href="#billing-form-box">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="billing-form-box">
+        <div class="form-box">
+            <div class="add-pay>">
+                <div class="name-address">
+                    <h1>Billing address</h1>
+                    <form class="name-details">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname">
+                        <label for="contact">Contact Number</label>
+                        <input type="contact" id="contact">
+                    </form><br>
+                    <form class="address-details">
+                        <label for="address">Address</label>
+                        <input type="address" id="address">
+                        <label for="address2">Address 2(Optional)</label>
+                        <input type="address2" id="address2">
+                    <form action="">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                        <optgroup label="Country">
+                    <form action="">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                        <optgroup label="City">
+                        <option value="">Pampanga</option>
+                    <label for="zip">Zip</label>
+                </div>
+                <br>
+                <div>
+                    <h1>Payment</h1>
+                    <form action="pay-options">
+                        <input type="radio" id="cod" name="payment-options">
+                        <label for="cod">Cash on delivery</label><br>
+                        <input type="radio" id="mcard" name="payment-options">
+                        <label for="mcard">MasterCard</label><br>
+                        <input type="radio" id="visa" name="payment-options">
+                        <label for="visa">Visa</label><br>
+                        <input type="radio" id="a_express" name="payment-options">
+                        <label for="a_express">American Express</label><br>
+                    </form>
+                    <br>
+                    <form action="payment"></form>
+                        <label for="card-name">Name on card</label>
+                        <input type="text" id="card-name">
+                        <label for="card-number">Credit card number</label>
+                        <input type="text" id="card-number">
+                        <label for="expiration">Expiration</label>
+                        <input type="text" id="expiration">
+                        <label for="cvv">cvv</label>
+                        <input type="text" id="cvv">
+                    </form>
+                </div>    <br>
+                <div class="button">
+                    <button class="common button" href="#home-page-box">Back</button>
+                    <button class="common button" href="#home-page-box">Continue</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-box">
+            <h1>Your cart</h1>
+            <div class="pay-sum">
+                <div class="prod-name">
+                    <h4>Product name</h4>
+                    <a>Brief description</a>
+                    <a>$12</a>
+                </div>
+                <div class="second-prod">
+                    <h4>Second Product</h4>
+                    <a>Brief description</a>
+                    <a>$8</a>
+                </div>
+                <div class="item">
+                    <h4>Third item</h4>
+                    <a>Brief description</a>
+                    <a>$5</a>
+                </div>
+                <div class="promo">
+                    <h4>Promo code</h4>
+                    <a>EXAMPLECODE</a>
+                    <a>-$5</a>
+                </div>
+            </div>
+            <button class="pro-code" href="#">
+                <a>Promo code</a>
+                <button id="redeem">Redeem</button>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
